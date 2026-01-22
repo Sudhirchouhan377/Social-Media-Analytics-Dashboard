@@ -2,7 +2,8 @@
 
 
 ## PowerBI Deshboard
-(Social-Media-Analytics-Dashboard.png)
+![Patient_details](
+Social-Media-Analytics-Dashboard.png)
 
 ## Project Overview
 This project analyzes the **Sales Conversion Optimization** dataset obtained from Kaggle, originally shared by **GOKAGGLERS**.  
