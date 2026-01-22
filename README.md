@@ -1,5 +1,9 @@
 # Sales Conversion Optimization Analysis
 
+
+## PowerBI Deshboard
+(Social-Media-Analytics-Dashboard.png)
+
 ## Project Overview
 This project analyzes the **Sales Conversion Optimization** dataset obtained from Kaggle, originally shared by **GOKAGGLERS**.  
 The dataset contains marketing and conversion performance data from an anonymous organization’s **social media advertising campaigns**, primarily run through Facebook.
