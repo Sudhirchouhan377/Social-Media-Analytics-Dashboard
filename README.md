@@ -2,7 +2,7 @@
 
 
 ## PowerBI Deshboard
-![Patient_details](
+![](
 Social-Media-Analytics-Dashboard.png)
 
 ## Project Overview
