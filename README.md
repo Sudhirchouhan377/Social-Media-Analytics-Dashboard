@@ -1,108 +1,69 @@
-# Business Sales & Performance Dashboard
-### Excel | Power BI 
+# Sales Conversion Optimization Analysis
 
----
-## Dataset - https://www.kaggle.com/datasets/loveall/clicks-conversion-tracking
-## Project Overview
-This project focuses on building an end-to-end business analytics solution to analyze sales performance, customer behavior, and revenue trends using Excel, Power BI, and Tableau.
+## 📌 Project Overview
+This project analyzes the **Sales Conversion Optimization** dataset obtained from Kaggle, originally shared by **GOKAGGLERS**.  
+The dataset contains marketing and conversion performance data from an anonymous organization’s **social media advertising campaigns**, primarily run through Facebook.
 
-The goal is to convert raw transactional data into actionable business insights through data cleaning, exploratory data analysis, and interactive dashboards.
-
----
-
-## Tools & Technologies
-- Excel – Data cleaning, preprocessing, and analysis
-- Power BI – Interactive dashboards and KPI tracking
-- Tableau – Advanced data visualization and drill-down analysis
-- Python (optional) – Data preprocessing and validation
-- SQL (optional) – Aggregation and metric analysis
+The objective of this project is to:
+- Clean and validate the dataset
+- Perform exploratory data analysis
+- Engineer meaningful marketing KPIs
+- Visualize campaign performance using Power BI
+- Derive insights to improve conversion efficiency
 
 ---
 
 ## Dataset Description
-- Real-world / simulated business sales dataset
-- Key columns include:
-  - Order Date
-  - Product Category
-  - Region
-  - Sales
-  - Profit
-  - Quantity
-  - Customer Segment
+
+- **Source:** Kaggle –  https://www.kaggle.com/datasets/loveall/clicks-conversion-tracking 
+- **Total Entries (Original):** 1143  
+- **Total Columns:** 11  
+
+### Column Details
+| Column Name | Description |
+|------------|-------------|
+| `ad_id` | Unique identifier for each advertisement |
+| `xyzcampaignid` | Campaign ID assigned by XYZ company |
+| `fbcampaignid` | Campaign ID tracked by Facebook |
+| `age` | Age group of the person shown the ad |
+| `gender` | Gender of the person shown the ad |
+| `interest` | Interest category code based on Facebook profile |
+| `Impressions` | Number of times the ad was displayed |
+| `Clicks` | Number of clicks received by the ad |
+| `Spent` | Amount spent by XYZ company on the ad |
+| `Total_Conversion` | Number of people who enquired about the product |
+| `Approved_Conversion` | Number of people who purchased the product |
 
 ---
 
-##  Project Workflow
+## 🧹 Data Cleaning & Preparation
 
-### 1. Data Cleaning (Excel)
-- Removed duplicate records
-- Handled missing and inconsistent values
-- Standardized date formats and categorical fields
-- Created calculated columns for revenue and profit
+### Tools Used
+- **Microsoft Excel** – Data cleaning & preprocessing  
+- **Microsoft Power BI** – Data visualization & dashboard creation  
 
-### 2. Exploratory Data Analysis (EDA)
-- Analyzed sales and profit trends over time
-- Identified top-performing products and categories
-- Conducted region-wise and segment-wise analysis
-- Applied Pareto analysis (80/20 rule)
+### Cleaning Steps
+- No missing or invalid data types were found.
+- **Data inconsistency detected:**  
+  - 204 records had `Clicks = 0` but `Total_Conversion > 0`.
+  - This is logically incorrect, as conversions cannot occur without clicks.
+- These inconsistent rows were removed.
 
-### 3. Power BI Dashboard
-- Built interactive dashboards to track:
-  - Total Revenue
-  - Total Profit
-  - Monthly Sales Growth
-  - Category-wise and Region-wise performance
-- Added slicers for year, region, and category
-
-### 4. Tableau Dashboard
-- Created dynamic visualizations with:
-  - Drill-down by region and product
-  - Sales vs Profit comparison
-  - Trend analysis with interactive filters
-  - Customer segment performance
+### Final Dataset
+- **Cleaned Entries:** 939  
+- **Columns:** 11  
 
 ---
 
-##  Key Insights
-- Top 20% of products contribute nearly 80% of total revenue
-- Seasonal sales spikes observed during specific months
-- Certain regions show high sales but low profit margins
-- Pricing and inventory optimization opportunities identified
+## Methodology
 
----
+After observation, it was found that there were no null or invalid type values present in the data. However, it was easy to notice that some entries (204 entries) were having error as Column “Clicks” had value 0 but Column “Total_Conversion” had non-zero values. This is illogical because an ad cannot still gain postive conversions (customers) while no one clicks on it. So, after removing those data, Our dataset consist a total of 939 entries.
 
-##  Business Recommendations
-- Focus on high-margin products to increase profitability
-- Optimize inventory during peak sales periods
-- Improve pricing strategies in low-profit regions
-- Target high-performing customer segments for retention
-
----
-
-## Dashboard Preview
-Screenshots of Power BI and Tableau dashboards are available in the `dashboard_screenshots/` folder.
-
----
-
-## How to Run
-1. Open Excel files to view raw and cleaned datasets
-2. Load the dataset into Power BI (.pbix file) to explore dashboards
-3. Open Tableau workbook (.twbx) for interactive visual analysis
-
----
-
-## Project Highlights
-- End-to-end data analytics workflow
-- Strong business-focused KPIs
-- Ideal for Data Analyst / Business Analyst roles
-- On-campus placement ready project
-
----
-
-## Contact
-**Sudhir Chouhan**  
-Email: 2024PGMHMH12@nitjsr.ac.in  
-GitHub: https://github.com/Sudhirchouhan377  
-LinkedIn: https://www.linkedin.com/in/sudhir-chouhan2663/
-
-
+### Cost per Mille (CPM)
+- It is a metric that represents the cost of displaying an ad to 1,000 people. In other words, it measures how much a business pays for every 1,000 ad impressions.
+### Cost per click (CPC) 
+- It is a metric that represents the cost of getting a user to click on an ad. It measures how much a business pays for every click on their ad.
+### Click-through rate (CTR)
+- It is a metric that represents the percentage of users who click on an ad after seeing it. It measures the effectiveness of an ad in getting users to click through to a website or landing page
+### CPA (Cost per Acquisition/Action)
+- It is a metric that represents the cost of acquiring a new customer through an ad campaign. It measures how much a business pays for every new customer acquired through their ad.
