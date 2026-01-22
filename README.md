@@ -41,7 +41,7 @@ The objective of this project is to:
 
 ---
 
-## 🧹 Data Cleaning & Preparation
+## Data Cleaning & Preparation
 
 ### Tools Used
 - **Microsoft Excel** – Data cleaning & preprocessing  
